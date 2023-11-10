@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>Matrículas</h1>')
+    return render(request, 'index.html')
+
+def cadastro(request):
+    return render(request, 'cadastro.html')
